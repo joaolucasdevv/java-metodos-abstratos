@@ -1,0 +1,7 @@
+package entities;
+
+public class Circle extends Shape{
+
+    private Double radius;
+
+}
