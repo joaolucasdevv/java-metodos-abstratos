@@ -49,6 +49,11 @@ public class Program {
             }
         }
 
+        System.out.println("SHAPES AREAS:");
+        for (Shape s : shapes) {
+            System.out.printf("%.2f%n", s.area());
+        }
+
         sc.close();
     }
 }
