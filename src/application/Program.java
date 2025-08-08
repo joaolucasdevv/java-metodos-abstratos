@@ -25,6 +25,7 @@ public class Program {
             System.out.print("Rectangle or Circle (r/c)? ");
             char resp = sc.next().charAt(0);
             if (resp == 'r') {
+                sc.nextLine();
                 System.out.print("Color (BLACK/BLUE/RED): ");
                 Color color = Color.valueOf(sc.nextLine());
 
@@ -38,6 +39,7 @@ public class Program {
                 shapes.add(shape);
             }
             else if (resp == 'c') {
+                sc.nextLine();
                 System.out.print("Color (BLACK/BLUE/RED): ");
                 Color color = Color.valueOf(sc.nextLine());
 
