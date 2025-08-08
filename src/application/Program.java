@@ -1,5 +1,6 @@
 package application;
 
+import entities.Circle;
 import entities.Color;
 import entities.Rectangle;
 import entities.Shape;
@@ -34,6 +35,17 @@ public class Program {
                 double height = sc.nextDouble();
 
                 Shape shape = new Rectangle(color, width, height);
+                shapes.add(shape);
+            }
+            else if (resp == 'c') {
+                System.out.print("Color (BLACK/BLUE/RED): ");
+                Color color = Color.valueOf(sc.nextLine());
+
+                System.out.print("radius: ");
+                double radius = sc.nextDouble();
+
+                Shape shape = new Circle(color, radius);
+                shapes.add(shape);
             }
         }
 
