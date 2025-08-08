@@ -1,5 +1,11 @@
 package application;
 
+import entities.Color;
+import entities.Rectangle;
+import entities.Shape;
+
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -7,6 +13,8 @@ public class Program {
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
+
+        List<Shape> shapes = new ArrayList<>();
 
         System.out.print("Enter the number of shapes: ");
         int n = sc.nextInt();
@@ -16,7 +24,16 @@ public class Program {
             System.out.print("Rectangle or Circle (r/c)? ");
             char resp = sc.next().charAt(0);
             if (resp == 'r') {
+                System.out.print("Color (BLACK/BLUE/RED): ");
+                Color color = Color.valueOf(sc.nextLine());
 
+                System.out.print("Width: ");
+                double width = sc.nextDouble();
+
+                System.out.print("Height: ");
+                double height = sc.nextDouble();
+
+                Shape shape = new Rectangle(color, width, height);
             }
         }
 
