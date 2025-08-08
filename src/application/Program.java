@@ -11,7 +11,14 @@ public class Program {
         System.out.print("Enter the number of shapes: ");
         int n = sc.nextInt();
 
+        for (int i=1; i<=n; i++) {
+            System.out.println("Shape #" + i + " data:");
+            System.out.print("Rectangle or Circle (r/c)? ");
+            char resp = sc.next().charAt(0);
+            if (resp == 'r') {
 
+            }
+        }
 
         sc.close();
     }
