@@ -2,8 +2,6 @@ package entities;
 
 public class Circle extends Shape {
 
-    public static final Double PI = 3.1415;
-
     private Double radius;
 
     public Circle() {
@@ -24,7 +22,7 @@ public class Circle extends Shape {
 
     @Override
     public Double area() {
-        return PI * radius * radius;
+        return Math.PI * Math.pow(radius, 2);
     }
 
 }
