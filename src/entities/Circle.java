@@ -20,4 +20,9 @@ public class Circle extends Shape {
         this.radius = radius;
     }
 
+    @Override
+    public Double area() {
+        return Math.PI * Math.pow(radius, 2);
+    }
+
 }
