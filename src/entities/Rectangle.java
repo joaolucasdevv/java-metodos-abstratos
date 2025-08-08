@@ -22,4 +22,11 @@ public class Rectangle extends Shape {
         return height;
     }
 
+    public void setWidth(Double width) {
+        this.width = width;
+    }
+
+    public void setHeight(Double height) {
+        this.height = height;
+    }
 }
