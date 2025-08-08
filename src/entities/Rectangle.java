@@ -14,4 +14,12 @@ public class Rectangle extends Shape {
         this.height = height;
     }
 
+    public Double getWidth() {
+        return width;
+    }
+
+    public Double getHeight() {
+        return height;
+    }
+
 }
